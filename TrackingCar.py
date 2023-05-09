@@ -122,7 +122,7 @@ def trackMultipleObjects():
             t_h = int(trackedPosition.height())
 
             cv2.rectangle(resultImage, (t_x, t_y), (t_x + t_w, t_y + t_h), rectangleColor, 4)
-            cv2.putText(resultImage, "vehicle", (int(t_x + t_w/2), int(t_y-15)), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 100) ,2)
+            cv2.putText(resultImage, "car", (int(t_x + t_w/2), int(t_y-15)), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 100) ,2)
             print('%d', t_x)
 
             carLocation2[carID] = [t_x, t_y, t_w, t_h]
