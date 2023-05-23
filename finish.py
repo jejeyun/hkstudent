@@ -297,9 +297,7 @@ def main():
                 print("Radaring start")
             elif Camera_Radar_on ==False:
                 trm121(False)
-        
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
+
     except:
         KeyboardInterrupt
         
